@@ -113,7 +113,7 @@ export default {
         p {
             margin: 0.75rem 0;
             color: #959595;
-            font-size: small;
+            font-size: x-small
         }
     }
 
@@ -135,7 +135,7 @@ export default {
 
     .social {
         display: flex;
-        gap: 1rem;
+        gap: 0.75rem;
 
 
         h3 {

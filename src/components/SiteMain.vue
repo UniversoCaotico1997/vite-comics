@@ -13,7 +13,7 @@ export default {
         <section class="content">
             <div class="container">
                 <div class="box">
-                    <h3>.. Content goes here ..</h3>
+                    <h3>- - > Content goes here - -</h3>
                 </div>
                 <!-- /.box -->
             </div>
@@ -24,23 +24,23 @@ export default {
                 <div class="nav">
                     <div class="square">
                         <img src="../assets/img/buy-comics-digital-comics.png" alt="">
-                        <h4>Digital Comics</h4>
+                        <h5>Digital Comics</h5>
                     </div>
                     <div class="square">
                         <img src="../assets/img/buy-comics-merchandise.png" alt="">
-                        <h4>Dc Merchandise</h4>
+                        <h5>Dc Merchandise</h5>
                     </div>
                     <div class="square">
                         <img src="../assets/img/buy-comics-subscriptions.png" alt="">
-                        <h4>Subscription</h4>
+                        <h5>Subscription</h5>
                     </div>
                     <div class="square">
                         <img src="../assets/img/buy-comics-shop-locator.png" alt="">
-                        <h4>Comic Shop Locator</h4>
+                        <h5>Comic Shop Locator</h5>
                     </div>
                     <div class="square">
                         <img src="../assets/img/buy-dc-power-visa.svg" alt="">
-                        <h4>Dc Power Visa</h4>
+                        <h5>Dc Power Visa</h5>
                     </div>
                 </div>
             </div>
@@ -86,7 +86,7 @@ export default {
             .square {
                 display: flex;
                 align-items: center;
-                margin-right: 2rem;
+                margin: 0 1rem;
                 color: white;
                 text-transform: uppercase;
 
