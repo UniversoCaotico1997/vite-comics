@@ -37,9 +37,15 @@ export default {
 
 <style lang="scss" scoped>
 .container {
-    padding-top: 1rem;
+    width: 80%;
+    margin: auto;
+    padding: 1rem;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+
+    img {
+        width: 60%;
+    }
 }
 
 .box_right {
@@ -52,7 +58,5 @@ export default {
         text-transform: uppercase;
         font-size: small;
     }
-
-
 }
 </style>
