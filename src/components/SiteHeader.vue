@@ -1,7 +1,54 @@
 <script>
 
 export default {
-    name: `SiteHeader`
+    name: `SiteHeader`,
+    data() {
+        return {
+            menu: [
+                {
+                    text: `characters`,
+                    herf: `#`
+                },
+                {
+                    text: `comics`,
+                    herf: `#`
+                },
+                {
+                    text: `movies`,
+                    herf: `#`
+                },
+                {
+                    text: `tv`,
+                    herf: `#`
+                },
+                {
+                    text: `games`,
+                    herf: `#`
+                },
+                {
+                    text: `collectibles`,
+                    herf: `#`
+                },
+                {
+                    text: `videos`,
+                    herf: `#`
+                },
+                {
+                    text: `fans`,
+                    herf: `#`
+                },
+                {
+                    text: `news`,
+                    herf: `#`
+                },
+                {
+                    text: `shop`,
+                    herf: `#`
+                },
+            ]
+        }
+
+    }
 }
 
 </script>
@@ -17,16 +64,13 @@ export default {
             <!-- /.box_left -->
 
             <div class="box_right">
-                <a href="#">characters</a>
-                <a href="#">comics</a>
-                <a href="#">movies</a>
-                <a href="#">tv</a>
-                <a href="#">games</a>
-                <a href="#">collectibles</a>
-                <a href="#">videos</a>
-                <a href="#">fans</a>
-                <a href="#">news</a>
-                <a href="#">shop</a>
+                <ul v-for="item in menu">
+                    <li>
+                        <a href="#">{{ item.text }}</a>
+                    </li>
+                </ul>
+
+
             </div>
             <!-- /.box_right -->
         </div>
@@ -50,6 +94,11 @@ export default {
 
 .box_right {
     align-self: center;
+    display: flex;
+
+    ul {
+        list-style-type: none;
+    }
 
     a {
         text-decoration: none;
@@ -57,6 +106,10 @@ export default {
         color: black;
         text-transform: uppercase;
         font-size: small;
+
+        &:hover {
+            color: #0282F9;
+        }
     }
 }
 </style>
