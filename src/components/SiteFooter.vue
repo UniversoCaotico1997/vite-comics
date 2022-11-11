@@ -157,12 +157,6 @@ export default {
         padding: 2rem;
         display: flex;
         justify-content: space-between;
-
-        img {
-            position: absolute;
-            right: 170px;
-            top: 200px;
-        }
     }
 
 
@@ -192,7 +186,7 @@ export default {
 
 .contact {
     background-color: #303030;
-    position: relative;
+
 
     .container {
         width: 80%;

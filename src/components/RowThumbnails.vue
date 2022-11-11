@@ -1,7 +1,10 @@
 <script>
-
+// import { } from "./Thumbnails.vue";
 export default {
-    name: `RowThumbnails`
+    name: `RowThumbnails`,
+    // components: {
+    //     thumbnails
+    // }
 }
 
 </script>
@@ -10,12 +13,10 @@ export default {
 
 
 <template>
-    <div class="row">
+    <div class="row" v-for="item in thumbnails">
         <div class="col">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis facilis natus quae tempore
-            eaque est impedit quaerat tempora aperiam sit praesentium voluptate, suscipit autem eos quidem
-            officia, accusantium ex cum?
-            <h3>Titolo</h3>
+            <img :src="item.thumb" alt="">
+            <h3>{{ item.type }}</h3>
         </div>
         <!-- /.col -->
     </div>

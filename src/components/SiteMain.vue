@@ -3,6 +3,7 @@ import SectionBanner from "./SectionBanner.vue";
 import SectionContent from "./RowThumbnails.vue";
 import RowThumbnails from "./RowThumbnails.vue";
 
+
 export default {
     name: `SiteMain`,
     components: {
@@ -21,7 +22,9 @@ export default {
     <main id="site-main">
         <section class="content">
             <div class="container">
+
                 <RowThumbnails></RowThumbnails>
+
             </div>
         </section>
 
