@@ -1,7 +1,12 @@
 <script>
+import SectionBanner from "./SectionBanner.vue";
 
 export default {
-    name: `SiteMain`
+    name: `SiteMain`,
+    components: {
+        SectionBanner
+    }
+
 }
 
 </script>
@@ -19,33 +24,10 @@ export default {
             </div>
         </section>
         <!-- /.container -->
-        <section class="info">
-            <div class="container">
-                <div class="nav">
-                    <div class="square">
-                        <img src="../assets/img/buy-comics-digital-comics.png" alt="">
-                        <h5>Digital Comics</h5>
-                    </div>
-                    <div class="square">
-                        <img src="../assets/img/buy-comics-merchandise.png" alt="">
-                        <h5>Dc Merchandise</h5>
-                    </div>
-                    <div class="square">
-                        <img src="../assets/img/buy-comics-subscriptions.png" alt="">
-                        <h5>Subscription</h5>
-                    </div>
-                    <div class="square">
-                        <img src="../assets/img/buy-comics-shop-locator.png" alt="">
-                        <h5>Comic Shop Locator</h5>
-                    </div>
-                    <div class="square">
-                        <img src="../assets/img/buy-dc-power-visa.svg" alt="">
-                        <h5>Dc Power Visa</h5>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- /.container -->
+
+        <SectionBanner></SectionBanner>
+
+
     </main>
 
 </template>
@@ -65,40 +47,6 @@ export default {
         h3 {
             color: white;
         }
-    }
-
-}
-
-
-.info {
-    background-color: #0282F9;
-
-    .container {
-        width: 80%;
-        margin: auto;
-        padding: 2rem;
-        position: relative;
-        z-index: 1;
-
-        .nav {
-            display: flex;
-
-            .square {
-                display: flex;
-                align-items: center;
-                margin: 0 1rem;
-                color: white;
-                text-transform: uppercase;
-
-                img {
-                    width: 20%;
-                    margin-right: 1rem;
-                }
-            }
-
-
-        }
-
     }
 
 }
