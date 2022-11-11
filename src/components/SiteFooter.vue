@@ -15,39 +15,106 @@ export default {
                 <div class="left">
                     <div class="box">
                         <h3>Dc Comics</h3>
-                        <p>Characters</p>
-                        <p>Comics</p>
-                        <p>Movies</p>
-                        <p>Tv</p>
-                        <p>Games</p>
-                        <p>Videos</p>
-                        <p>News</p>
+                        <ul>
+                            <li>
+                                <a href="">Characters</a>
+                            </li>
+                            <li>
+                                <a href="">Movies</a>
+                            </li>
+                            <li>
+                                <a href="">Characters</a>
+                            </li>
+                            <li>
+                                <a href="">Comics</a>
+                            </li>
+                            <li>
+                                <a href="">Tv</a>
+                            </li>
+                            <li>
+                                <a href="">Games</a>
+                            </li>
+                            <li>
+                                <a href="">Videos</a>
+                            </li>
+                            <li>
+                                <a href="">News</a>
+                            </li>
+                        </ul>
                         <h3>Shop</h3>
-                        <p>Shop Dc</p>
-                        <p>Shop Dc Collections</p>
+                        <ul>
+                            <li>
+                                <a href="">Shop Dc</a>
+                            </li>
+                            <li>
+                                <a href="">Shop Dc Collections</a>
+                            </li>
+                        </ul>
                     </div>
+                    <!-- /.box -->
+
                     <div class="box">
                         <h3>Dc</h3>
-                        <p>Characters</p>
-                        <p>Comics</p>
-                        <p>Movies</p>
-                        <p>Tv</p>
-                        <p>Games</p>
-                        <p>Videos</p>
-                        <p>News</p>
-                        <p>Shop Dc</p>
-                        <p>Shop Dc Collectibles</p>
-                        <p>Shop Dc</p>
-                        <p>Shop Dc Collectibles</p>
+                        <ul>
+                            <li>
+                                <a href="">Characters</a>
+                            </li>
+                            <li>
+                                <a href="">Movies</a>
+                            </li>
+                            <li>
+                                <a href="">Characters</a>
+                            </li>
+                            <li>
+                                <a href="">Comics</a>
+                            </li>
+                            <li>
+                                <a href="">Tv</a>
+                            </li>
+                            <li>
+                                <a href="">Games</a>
+                            </li>
+                            <li>
+                                <a href="">Videos</a>
+                            </li>
+                            <li>
+                                <a href="">News</a>
+                            </li>
+                            <li>
+                                <a href="">News</a>
+                            </li>
+                            <li>
+                                <a href="">News</a>
+                            </li>
+                            <li>
+                                <a href="">News</a>
+                            </li>
+                        </ul>
+
                     </div>
+                    <!-- /.box -->
+
                     <div class="box">
                         <h3>Sites</h3>
-                        <p>Characters</p>
-                        <p>Comics</p>
-                        <p>Movies</p>
-                        <p>Tv</p>
-                        <p>Games</p>
+                        <ul>
+                            <li>
+                                <a href="">DC</a>
+                            </li>
+                            <li>
+                                <a href="">MAD Magazine</a>
+                            </li>
+                            <li>
+                                <a href="">MAD Magazine</a>
+                            </li>
+                            <li>
+                                <a href="">DC Kids</a>
+                            </li>
+                            <li>
+                                <a href="">DC Power Visa</a>
+                            </li>
+                        </ul>
                     </div>
+                    <!-- /.box -->
                 </div>
                 <!-- /.left -->
                 <div class="rigth">
@@ -105,15 +172,19 @@ export default {
         text-transform: uppercase;
         gap: 2rem;
 
+        ul {
+            list-style-type: none;
+        }
 
         h3 {
             color: white;
         }
 
-        p {
+        a {
             margin: 0.75rem 0;
             color: #959595;
-            font-size: x-small
+            font-size: x-small;
+            text-decoration: none;
         }
     }
 
