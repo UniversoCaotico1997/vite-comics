@@ -18,9 +18,8 @@ export default {
                     <h5>Dc Merchandise</h5>
                 </div>
                 <div class="square">
-                    <img src="../assets/img/buy-comics-subscriptions.png" alt=""> // Rendere dinamche le immagine
-                    attraverso un ciclo for //
-                    <h5>Subscription</h5> // Ceare un components Banner così da separare il tutto //
+                    <img src="../assets/img/buy-comics-subscriptions.png" alt="">
+                    <h5>Subscription</h5>
                 </div>
                 <div class="square">
                     <img src="../assets/img/buy-comics-shop-locator.png" alt="">
@@ -45,8 +44,6 @@ export default {
         width: 80%;
         margin: auto;
         padding: 2rem;
-        position: relative;
-        z-index: 1;
 
         .info {
             display: flex;
@@ -54,12 +51,12 @@ export default {
             .square {
                 display: flex;
                 align-items: center;
-                margin: 0 1rem;
+                margin: 0 3rem;
                 color: white;
                 text-transform: uppercase;
 
                 img {
-                    width: 20%;
+                    width: 50px;
                     margin-right: 1rem;
                 }
             }
