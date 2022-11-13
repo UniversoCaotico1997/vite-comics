@@ -1,16 +1,21 @@
 <script>
 import SectionBanner from "./SectionBanner.vue";
-import SectionContent from "./RowThumbnails.vue";
-import RowThumbnails from "./RowThumbnails.vue";
-
-
+import CardComics from "./CardComics.vue";
+import Comics from "../assets/partials/js/comics";
+import BgJumbotron from "./BgJumbotron.vue";
 export default {
     name: `SiteMain`,
     components: {
         SectionBanner,
-        SectionContent,
-        RowThumbnails
+        CardComics,
+        BgJumbotron
+    },
+    data() {
+        return {
+            comics: Comics
+        }
     }
+
 
 }
 
@@ -19,35 +24,46 @@ export default {
 
 <template>
 
-    <main id="site-main">
-        <section class="content">
-            <div class="container">
+    <BgJumbotron></BgJumbotron>
 
-                <RowThumbnails></RowThumbnails>
+    <div class="container">
+        <div class="row">
+            <CardComics v-for="item in comics" :image="item.thumb" :title="item.series" />
+        </div>
+    </div>
+    <div class="load_more">
+        <a href="#">load more</a>
+    </div>
 
-            </div>
-        </section>
-
-
-        <SectionBanner></SectionBanner>
-
-
-    </main>
+    <SectionBanner></SectionBanner>
 
 </template>
 
 <style lang="scss" scoped>
-.content {
-    background-color: #1C1C1C;
+@use"../assets/partials/variable/container";
+@use"../assets/partials/variable/variables" as *;
 
-    .container {
-        width: 80%;
-        margin: auto;
-        padding: 2rem;
-        display: flex;
-        justify-content: space-between;
-        color: white;
+
+.row {
+    margin-top: 1rem;
+    display: flex;
+    gap: 1rem;
+    color: $dc-white;
+}
+
+.load_more {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1.50rem;
+
+    a {
+        text-decoration: none;
+        text-transform: uppercase;
+        color: $dc-white;
+        padding: 0.50rem 2rem;
+        border: 1px solid $dc-primary;
+        background-color: $dc-primary;
     }
-
 }
 </style>

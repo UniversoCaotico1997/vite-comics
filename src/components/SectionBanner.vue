@@ -1,33 +1,47 @@
 <script>
 export default {
-    name: `SectionBanner`
+    name: `SectionBanner`,
+    data() {
+        return {
+            icons: [
+                {
+                    image: `buy-comics-digital-comics.png`,
+                    title: `Digital Comics`
+                },
+                {
+                    image: `buy-comics-merchandise.png`,
+                    title: `Dc Merchandise`
+                },
+                {
+                    image: `buy-comics-shop-locator.png`,
+                    title: `Subscription`
+                },
+                {
+                    image: `buy-comics-subscriptions.png`,
+                    title: `Comic Shop Locator`
+                },
+                {
+                    image: `buy-dc-power-visa.svg`,
+                    title: `Dc Power Visa`
+                }
+            ]
+        }
+    },
+    methods: {
+        getImageUrl(name) {
+            return new URL(`../assets/img/${name}`, import.meta.url).href
+        }
+    }
 }
 </script>
-
-
+ 
 <template>
     <section class="banner">
         <div class="container">
             <div class="info">
-                <div class="square">
-                    <img src="../assets/img/buy-comics-digital-comics.png" alt="">
-                    <h5>Digital Comics</h5>
-                </div>
-                <div class="square">
-                    <img src="../assets/img/buy-comics-merchandise.png" alt="">
-                    <h5>Dc Merchandise</h5>
-                </div>
-                <div class="square">
-                    <img src="../assets/img/buy-comics-subscriptions.png" alt="">
-                    <h5>Subscription</h5>
-                </div>
-                <div class="square">
-                    <img src="../assets/img/buy-comics-shop-locator.png" alt="">
-                    <h5>Comic Shop Locator</h5>
-                </div>
-                <div class="square">
-                    <img src="../assets/img/buy-dc-power-visa.svg" alt="">
-                    <h5>Dc Power Visa</h5>
+                <div class="square" v-for="icon in icons">
+                    <img :src="getImageUrl(icon.image)" alt="">
+                    <h5>{{ icon.title }}</h5>
                 </div>
             </div>
         </div>

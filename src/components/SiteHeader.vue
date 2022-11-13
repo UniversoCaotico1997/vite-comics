@@ -55,7 +55,7 @@ export default {
 
 
 <template>
-    <header id="site-header">
+    <div class="menu">
         <div class="container">
 
             <div class="box_left">
@@ -64,32 +64,26 @@ export default {
             <!-- /.box_left -->
 
             <div class="box_right">
+
                 <ul v-for="item in menu">
                     <li>
                         <a href="#">{{ item.text }}</a>
                     </li>
                 </ul>
 
-
             </div>
             <!-- /.box_right -->
         </div>
         <!-- /.container -->
-
-    </header>
+    </div>
 </template>
 
 <style lang="scss" scoped>
-.container {
-    width: 80%;
-    margin: auto;
-    padding: 1rem;
-    display: flex;
-    justify-content: space-between;
+@use"../assets/partials/variable/container";
+@use"../assets/partials/variable/variables" as *;
 
-    img {
-        width: 60%;
-    }
+.menu {
+    background-color: $dc-white;
 }
 
 .box_right {
@@ -108,7 +102,7 @@ export default {
         font-size: small;
 
         &:hover {
-            color: #0282F9;
+            color: $dc-primary;
         }
     }
 }
